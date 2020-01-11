@@ -1,0 +1,73 @@
+.textcell input {
+  /* CHANGE TEXT FONT HERE */
+  font-family: Hind;
+  /* CHANGE TEXT COLOR HERE */
+  color: black;
+}
+
+.imagecell, .textcell, .textcell input, .padder {
+  background-color: white;
+  transition: background-color 0.1s;
+}
+
+/* DO NOT TOUCH */
+
+body {
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.imagecell {
+  width: 15.67vw;
+  height: calc(100vh - 50px);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8.33vw 8.33vw 0 0;
+  cursor: pointer;
+}
+
+.textcell {
+  width: 15.67vw;
+  height: 32px;
+}
+
+.textcell input {
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  text-align: center;
+  padding: 8px 0 8px 8px;
+}
+
+.textcell input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 8px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABDSURBVChThY5JDgAgCANb///nSmSRA9EJQTMpCiUBpCARnXDWYRVk6GjnvjBhAysv5+yE88ADD0xfhPsuuUr2PcqJG/YyJv/r6BEDAAAAAElFTkSuQmCC");
+}
+
+.spacer {
+  width: 1vw;
+}
+
+.imagecell:hover, .textcell input:hover {
+  background-color: salmon;
+}
+
+body {
+  background: transparent;
+}
+
+table, td, input {
+  border: 0;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url("font/hind-bold-webfont.woff2") format("woff2"),
+       url("font/hind-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Pokemon Team Tracker</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <input id="fileinput" type="file" onchange="add_img_handler(this)" accept="image/*" style="display:none" />
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td id="pokemon1" class="imagecell" onclick="add_img(this)" oncontextmenu="clear_img(this, event)"></td>
+        <td class="spacer"></td>
+        <td id="pokemon2" class="imagecell" onclick="add_img(this)" oncontextmenu="clear_img(this, event)"></td>
+        <td class="spacer"></td>
+        <td id="pokemon3" class="imagecell" onclick="add_img(this)" oncontextmenu="clear_img(this, event)"></td>
+        <td class="spacer"></td>
+        <td id="pokemon4" class="imagecell" onclick="add_img(this)" oncontextmenu="clear_img(this, event)"></td>
+        <td class="spacer"></td>
+        <td id="pokemon5" class="imagecell" onclick="add_img(this)" oncontextmenu="clear_img(this, event)"></td>
+        <td class="spacer"></td>
+        <td id="pokemon6" class="imagecell" onclick="add_img(this)" oncontextmenu="clear_img(this, event)"></td>
+      </tr>
+      <tr>
+        <td class="textcell"><input id="name1" type="search" onkeydown="prevent_escape_delete(event)" onchange="change_text(this)" /></td>
+        <td class="spacer"></td>
+        <td class="textcell"><input id="name2" type="search" onkeydown="prevent_escape_delete(event)" onchange="change_text(this)" /></td>
+        <td class="spacer"></td>
+        <td class="textcell"><input id="name3" type="search" onkeydown="prevent_escape_delete(event)" onchange="change_text(this)" /></td>
+        <td class="spacer"></td>
+        <td class="textcell"><input id="name4" type="search" onkeydown="prevent_escape_delete(event)" onchange="change_text(this)" /></td>
+        <td class="spacer"></td>
+        <td class="textcell"><input id="name5" type="search" onkeydown="prevent_escape_delete(event)" onchange="change_text(this)" /></td>
+        <td class="spacer"></td>
+        <td class="textcell"><input id="name6" type="search" onkeydown="prevent_escape_delete(event)" onchange="change_text(this)" /></td>
+      </tr>
+    </table>
+  </body>
+</html>
